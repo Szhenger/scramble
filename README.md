@@ -1,5 +1,5 @@
 # Scramble
-#### Video Demo:  [Scramble](https://youtu.be/97oNN-riFhc)
+#### Video Demo:  [Scramble](https://youtu.be/KNZfhI4DNzo)
 #### Description:
 Hello, World! In the modern era, computers are foundational to how society operates at large; however, these electronics are only so pervasive because what of infomation is stored and operated on device. This presents risks and costs to individuals, but benefits and rewards to adversaries by enabling the theft of infomation at global distances. Today, we have protocols in place to better secure our infomation whether in hopes of preventing theft or making the theft moot by encrpting the infomation. A common method is scrambling the infomation stored within memory or drive, so that opening the file requires decrypting the infomation with a key stored securely by the individual. This command-line program using C scrambles the contents of the input file by inverting the bytes or reversing the order of bytes or hashing the bytes or splice bytes within the input file. Note that the input file will be modified with the command-line program; however, by running any even parity sequence of runs on the input file will return the file to the original state of the file for the first two encryption algorithms.
 #### Specification:
