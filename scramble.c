@@ -34,6 +34,7 @@ int main(int argc, char *argv[])
     if (cip == NULL)
     {
         printf("Main Error: Failed to open %s\n", cip_name);
+        fclose(src);
         return 3;
     }
 
@@ -122,7 +123,6 @@ int invert(FILE *input, FILE *output)
     if (buffer == NULL)
     {
         printf("Invert Error: Cannot allocate buffer\n");
-        free(buffer);
         return 10;
     }
 
@@ -277,7 +277,7 @@ int splice(FILE *input, FILE *output)
         printf("Splice Error: Cannot get size of file in bytes\n");
         return 8;
     }
-    int size = ftell(input) + 1;
+    int size = ftell(input);
 
     // Move the pointer of stream to start
     if (fseek(input, 0, SEEK_SET))
