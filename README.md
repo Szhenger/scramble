@@ -57,5 +57,8 @@ By offering multiple methods for scrambling data, `scramble` provides flexibilit
 * Output: The program produces an encrypted version of the input file. The original file is replaced by the encrypted version unless an error occurs during the process.
 
 ### Command-Line Usage:
-* Syntax: `./scramble <source-file> <method>`
-      
+* Syntax: `./scramble <source-file> <method>`.
+
+### File Handling:
+* If the encryption process is successful, then the original file is deleted and the encrypted file replaces it.
+* If encryption fails, then the original file remains unchanged and the temporary encrypted file is removed.
