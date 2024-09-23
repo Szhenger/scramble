@@ -4,9 +4,11 @@
 
 ## Problem to Solve
 
-In the digital age of 2024, securing sensitive information through encryption is vital. Unencrypted data stored on computers is vulnerable to unauthorized access, breaches, and malicious attacks, which can lead to severe privacy violations, identity theft, and financial loss. Despite the growing importance of cybersecurity, many files remain unprotected at rest.
+Given the modern digital age in 2024, sensitive data stored on computers is vulnerable to breaches, theft, and unauthorized access. With growing cybersecurity threats and increasing regulatory requirements for data protection (e.g., GDPR, HIPAA), encrypting files at rest is crucial for safeguarding personal and corporate information. Files that remain unencrypted are easy targets for malicious actors, leading to identity theft, financial loss, and privacy violations.
 
-This program, `scramble.c`, addresses such concerns by offering a simple yet effective command-line tool that encrypts files using multiple encryption techniques. By applying methods such as bitwise inversion, byte reversal, hashing, and byte splicing, Scramble ensures that the content of the files is altered, providing a layer of security for data at rest. This tool offers flexibility in encryption, allowing users to select the most suitable method for their use case. Designed for users who need a quick, accessible solution to protect files without the complexity of advanced cryptographic tools. It ensures that sensitive information is safeguarded, contributing to stronger overall data security practices.
+While existing encryption tools are powerful, they can be overly complex for users who simply want a fast, effective solution to encrypt files. This is where `Scramble` comes in—offering a lightweight, command-line encryption tool that enables users to protect their data with minimal effort.
+
+`Scramble` enables users to encrypt files by employing several encryption techniques, including bitwise inversion, byte reversal, and hashing. This flexibility ensures that files can be encrypted using an algorithm that best suits the user’s security requirements. The program is designed to be accessible and easy to integrate into automated workflows, making it an ideal solution for individuals and organizations alike.
 
 ## Background
 
