@@ -44,6 +44,10 @@ By offering multiple methods for scrambling data, `scramble` provides flexibilit
 * File Access Errors: If the program cannot open the source or output files, then it returns an error.
 * Invalid Encryption Method: If the provided encryption method is not supported, then the program prints an error message and exits.
 
+### Limitations:
+* Performance: The current implementation reads the entire file into memory, which causes issues with very large files. Future iterations could improve efficiency by processing the file in chunks.
+* Security: The encryption techniques used are lightweight and should not be considered secure for highly sensitive data. They are best suited for basic file obfuscation rather than strong cryptographic encryption.
+
 ## Specification
 
 TODO
