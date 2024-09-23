@@ -50,4 +50,8 @@ By offering multiple methods for scrambling data, `scramble` provides flexibilit
 
 ## Specification
 
-TODO
+### Input and Output:
+* Input: The program takes two command-line arguments: the source file to be encrypted and the encryption method.
+    * `<source-file>`: The path or name of the file to be encrypted (e.g., `source.txt`).
+    * `<method>`: The encryption method to apply (`invert`, `reverse`, `hash`, `splice`).
+* Output: The program produces an encrypted version of the input file. The original file is replaced by the encrypted version unless an error occurs during the process.
