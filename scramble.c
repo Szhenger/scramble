@@ -38,29 +38,29 @@ int main(int argc, char *argv[])
     }
 
     // Declare encryption flag
-    int is_enrypted;
+    int is_encrypted;
 
     // Scramble the contents of source file by writing to cipher file
     char *mth_name = argv[2];
     if (strcasecmp(mth_name, "invert") == 0)
     {
         // Inverts each byte in source file
-        is_enrypted = (invert(src, cip)) ? 0 : 1;
+        is_encrypted = (invert(src, cip)) ? 0 : 1;
     }
     else if (strcasecmp(mth_name, "reverse") == 0)
     {
         // Reverses the order of bytes in source file
-        is_enrypted = (reverse(src, cip)) ? 0 : 1;
+        is_encrypted = (reverse(src, cip)) ? 0 : 1;
     }
     else if (strcasecmp(mth_name, "hash") == 0)
     {
         // Hashes each bytes in source file
-        is_enrypted = (hash(src, cip)) ? 0 : 1;
+        is_encrypted = (hash(src, cip)) ? 0 : 1;
     }
     else if (strcasecmp(mth_name, "splice") == 0)
     {
         // Splices bytes into source file
-        is_enrypted = (splice(src, cip)) ? 0 : 1;
+        is_encrypted = (splice(src, cip)) ? 0 : 1;
     }
     else
     {
@@ -73,7 +73,7 @@ int main(int argc, char *argv[])
     fclose(cip);
 
     // Replace source file with encrypted copy file
-    if (is_enrypted == 1)
+    if (is_encrypted == 1)
     {
         if (remove(src_name))
         {
