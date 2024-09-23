@@ -32,7 +32,7 @@ By offering multiple methods for scrambling data, `scramble` provides flexibilit
 * Input/Output Handling: The program uses fopen to open the source file in read mode and a temporary output file in write mode. After processing, the temporary file is renamed to    replace the original file.
 * Buffers: The program allocates a buffer in memory to store the file contents during encryption. The buffer is modified based on the selected encryption method before being         written back to disk.
 
-### Main Functions:
+### Main Procedures:
 * `main()`: Takes as arguments source file and encryption method. Handles argument parsing, file opening, and selecting the appropriate encryption method. Manages file replacement   after successful encryption.
 * `invert()`: Reads the file into a buffer, inverts the bits of each byte, and writes the result to the output file.
 * `reverse()`: Reads the file in reverse order and writes the reversed byte sequence to the output file.
