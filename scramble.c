@@ -68,7 +68,7 @@ int main(int argc, char *argv[])
         return 4;
     }
 
-    // Close source and cipher files
+    // Closes source and cipher files
     fclose(src);
     fclose(cip);
 
