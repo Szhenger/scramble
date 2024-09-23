@@ -20,7 +20,7 @@ Today, encryption is a paramount tool for securing information. By rewriting rea
 * Hashing: Hashes each byte, transforming the file into a randomized format.
 * Splicing: Randomly inserts new bytes between the file’s original data, further obscuring the content.
 
-These methods were chosen for their simplicity and speed, making `scramble` an accessible tool for users who need basic file protection. However, it is important to note that these techniques do not offer the same level of security as advanced cryptographic algorithms like AES (Advanced Encryption Standard) or RSA (Rivest–Shamir–Adleman Public-Key Cryptosystem) and should not be used for securing highly sensitive information. Scramble is best suited for non-critical files where ease of use and fast encryption are key priorities.
+These methods were chosen for their simplicity and speed, making `scramble` an accessible tool for users who need basic file protection. On the other hand, it is important to note that these techniques do not offer the same level of security as advanced cryptographic algorithms like AES (Advanced Encryption Standard) or RSA (Rivest–Shamir–Adleman Public-Key Cryptosystem) and should not be used for securing highly sensitive information. Scramble is best suited for non-critical files where ease of use and fast encryption are key priorities.
 
 By offering multiple methods for scrambling data, `scramble` provides flexibility for users to choose the approach that best meets their needs. Whether it's obfuscating temporary files or providing a basic level of file encryption, `scramble` is designed to be a user-friendly tool for everyday encryption tasks.
 
