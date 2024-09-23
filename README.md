@@ -62,3 +62,7 @@ By offering multiple methods for scrambling data, `scramble` provides flexibilit
 ### File Handling:
 * If the encryption process is successful, then the original file is deleted and the encrypted file replaces it.
 * If encryption fails, then the original file remains unchanged and the temporary encrypted file is removed.
+
+### Edge Cases:
+* Empty Files: The program handles empty files by producing an empty encrypted output file.
+* File Permissions: If the program does not have permission to read or write the file, an error message is displayed, and no changes are   made to the file.
