@@ -10,7 +10,6 @@ int reverse(FILE *input, FILE *output);
 int hash(FILE *input, FILE *output);
 int splice(FILE *input, FILE *output);
 
-// Encypts the contents of source file
 int main(int argc, char *argv[])
 {
     // Ensure proper usage of the program
