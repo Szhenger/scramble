@@ -65,7 +65,7 @@ By offering multiple methods for scrambling data, `scramble` provides flexibilit
 
 ### Edge Cases:
 * Empty Files: The program handles empty files by producing an empty encrypted output file.
-* File Permissions: If the program does not have permission to read or write the file, an error message is displayed, and no changes are   made to the file.
+* File Permissions: If the program does not have permission to read or write the file, then an error message is displayed and no changes   are made to the file.
 
 ### Security Considerations:
 * Basic Encryption: The methods implemented in `scramble` provide basic file obfuscation but are not intended for high-security encryption. For sensitive data, more robust cryptographic algorithms like AES should be applied.
