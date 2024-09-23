@@ -55,3 +55,7 @@ By offering multiple methods for scrambling data, `scramble` provides flexibilit
     * `<source-file>`: The path or name of the file to be encrypted (e.g., `source.txt`).
     * `<method>`: The encryption method to apply (`invert`, `reverse`, `hash`, `splice`).
 * Output: The program produces an encrypted version of the input file. The original file is replaced by the encrypted version unless an error occurs during the process.
+
+### Command-Line Usage:
+* Syntax: `./scramble <source-file> <method>`
+      
