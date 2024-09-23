@@ -12,7 +12,9 @@ While existing encryption tools are powerful, they can be overly complex for use
 
 ## Background
 
-TODO
+Encryption is a fundamental tool for securing sensitive information in the digital age. By converting readable data into an unreadable format, encryption ensures that only authorized users can access the original content. In particular, file encryption is essential for protecting data at rest—files that are stored on a computer or device and not actively being used.
+
+Scramble was developed as a lightweight command-line tool to provide a quick and easy way to encrypt files. It uses a range of basic encryption techniques to modify the content of the file, including:
 
 ## Understanding
 
