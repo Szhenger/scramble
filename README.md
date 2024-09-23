@@ -40,9 +40,9 @@ By offering multiple methods for scrambling data, `scramble` provides flexibilit
 * `splice()`: Reads each byte of the file and inserts a random byte between each one before writing to the output file.
 
 ### Error Handling:
-* Invalid command-line arguments: If the user does not provide the correct number of arguments, an error message is printed.
-* File Access Errors: If the program cannot open the source or output files, it returns an error.
-* Invalid Encryption Method: If the provided encryption method is not supported, the program prints an error message and exits.
+* Invalid command-line arguments: If the user does not provide the correct number of arguments, then an error message is printed.
+* File Access Errors: If the program cannot open the source or output files, then it returns an error.
+* Invalid Encryption Method: If the provided encryption method is not supported, then the program prints an error message and exits.
 
 ## Specification
 
