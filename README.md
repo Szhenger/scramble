@@ -12,9 +12,17 @@ While existing encryption tools are powerful, they can be overly complex for use
 
 ## Background
 
-Encryption is a fundamental tool for securing sensitive information in the digital age. By converting readable data into an unreadable format, encryption ensures that only authorized users can access the original content. In particular, file encryption is essential for protecting data at rest—files that are stored on a computer or device and not actively being used.
+Encryption is a paramount tool for securing sensitive information in the digital age. By converting readable data into an unreadable format, encryption ensures that only authorized users can access the original content. In particular, file encryption is essential for protecting data at rest—files that are stored on a computer or device and not actively being used.
 
-Scramble was developed as a lightweight command-line tool to provide a quick and easy way to encrypt files. It uses a range of basic encryption techniques to modify the content of the file, including:
+`scramble` was developed as a lightweight command-line tool to provide a quick and easy way to encrypt files. It uses a range of basic encryption techniques to modify the content of the file, including:
+* Bitwise Inversion: Inverts each bit in the file’s data, turning `0`s into `1`s and vice versa.
+* Byte Reversal: Reverses the sequence of bytes in the file, scrambling the order of the content.
+* Hashing: Hashes each byte, transforming the file into a randomized format.
+* Splicing: Randomly inserts new bytes between the file’s original data, further obscuring the content.
+
+These methods were chosen for their simplicity and speed, making Scramble an accessible tool for users who need basic file protection. However, it is important to note that these techniques do not offer the same level of security as advanced cryptographic algorithms like AES or RSA, and should not be used for securing highly sensitive information. Scramble is best suited for non-critical files where ease of use and fast encryption are key priorities.
+
+By offering multiple methods for scrambling data, Scramble provides flexibility for users to choose the approach that best meets their needs. Whether it's obfuscating temporary files or providing a basic level of file encryption, Scramble is designed to be a user-friendly tool for everyday encryption tasks.
 
 ## Understanding
 
