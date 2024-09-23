@@ -26,7 +26,17 @@ By offering multiple methods for scrambling data, `scramble` provides flexibilit
 
 ## Understanding
 
-TODO
+`scramble` is a command-line tool that encrypts files using various techniques. It accepts two command-line arguments: the source file to be encrypted and the encryption method to apply. The selected encryption algorithm is executed on the file, and the resulting encrypted data is written to a temporary file. If the encryption process completes without errors, the original file is deleted, and the encrypted file is renamed to the original file's name.
+
+Key Components:
+* Input/Output Handling: The program uses fopen to open the source file in read mode and a temporary output file in write mode. After processing, the temporary file is renamed to    replace the original file.
+* Buffers: The program allocates a buffer in memory to store the file contents during encryption. The buffer is modified based on the selected encryption method before being         written back to disk.
+
+Encryption Methods:
+* `invert()` (Bitwise Inversion)
+* `reverse()` (Byte Reversal)
+* `hash()` (Hashing)
+* `splice()` (Splicing)
 
 ## Specification
 
