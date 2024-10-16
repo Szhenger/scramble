@@ -135,6 +135,7 @@ int invert(FILE *input, FILE *output)
     {
         printf("Invert Error: Cannot read file into buffer\n");
         free(buffer);
+        buffer = NULL;
         return 11;
     }
 
@@ -148,11 +149,13 @@ int invert(FILE *input, FILE *output)
     {
         printf("Invert Error: Failed to properly invert file\n");
         free(buffer);
+        buffer = NULL;
         return 12;
     }
 
     // Free buffer
     free(buffer);
+    buffer = NULL;
     return 0;
 }
 
@@ -231,6 +234,7 @@ int hash(FILE *input, FILE *output)
     {
         printf("Hash Error: Cannot allocate buffer\n");
         free(buffer);
+        buffer = NULL;
         return 10;
     }
 
@@ -240,6 +244,7 @@ int hash(FILE *input, FILE *output)
     {
         printf("Hash Error: Cannot read file into buffer\n");
         free(buffer);
+        buffer = NULL;
         return 11;
     }
 
@@ -256,12 +261,14 @@ int hash(FILE *input, FILE *output)
     {
         printf("Hash Error: Failed to properly hash file\n");
         free(buffer);
+        buffer = NULL;
         return 17;
     }
 
     // Free buffer
     free(buffer);
-
+    buffer = NULL;
+    
     // Print key to decrypt hashed file
     printf("%i\n", c);
     return 0;
@@ -294,7 +301,6 @@ int splice(FILE *input, FILE *output)
     if (buffer == NULL)
     {
         printf("Splice Error: Cannot allocate buffer\n");
-        free(buffer);
         return 11;
     }
 
@@ -308,6 +314,7 @@ int splice(FILE *input, FILE *output)
         {
             printf("Splice Error: Cannot read file into buffer\n");
             free(buffer);
+            buffer = NULL;
             return 18;
         }
         buffer[2 * i] = byte;
@@ -322,10 +329,12 @@ int splice(FILE *input, FILE *output)
     {
         printf("Splice Error: Failed to properly splice file\n");
         free(buffer);
+        buffer = NULL;
         return 19;
     }
 
     // Free buffer
     free(buffer);
+    buffer = NULL;
     return 0;
 }
