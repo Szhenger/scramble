@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
     {
         printf("Main Error: Failed to open %s\n", cip_name);
         fclose(src);
+        src = NULL;
         return 3;
     }
 
