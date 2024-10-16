@@ -71,7 +71,9 @@ int main(int argc, char *argv[])
 
     // Closes source and cipher files
     fclose(src);
+    src = NULL;
     fclose(cip);
+    cip = NULL;
 
     // Replace source file with encrypted copy file
     if (is_encrypted == 1)
